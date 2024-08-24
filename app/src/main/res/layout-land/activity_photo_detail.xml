@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutPhotoDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003EF8">
+
+    <TextView
+        android:id="@+id/textViewPhotoDetailUserLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#8E0C79"
+        android:text="233 LaSalle Drive 60435"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewPhotoDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Richard J. Durbin"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhotoDetailUserLocation"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <TextView
+        android:id="@+id/textViewPhotoDetailOffice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="U.S. Senator"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPhotoDetailName"
+        app:layout_constraintStart_toStartOf="@+id/textViewPhotoDetailName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhotoDetailUserLocation"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <ImageView
+        android:id="@+id/imageViewPhotoDetailPolitician"
+        android:layout_width="272dp"
+        android:layout_height="257dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhotoDetailUserLocation"
+        app:layout_constraintVertical_bias="0.51"
+        app:srcCompat="@drawable/missing" />
+
+    <ImageView
+        android:id="@+id/imageViewPhotoDetailParty"
+        android:layout_width="111dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="20dp"
+        android:onClick="goToPartyPage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPhotoDetailOffice"
+        app:layout_constraintStart_toStartOf="@+id/textViewPhotoDetailOffice"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhotoDetailOffice"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dem_logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
