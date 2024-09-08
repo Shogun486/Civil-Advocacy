@@ -9,7 +9,7 @@ This can raise political awareness and allow everyone to stay in-the-know.
 
 ## Tools
 
-This app is programmed entirely in Java. The
+This Android app is programmed entirely in Java. The
 following libraries are utilized:
   * Volley (API calls)
   * Picasso (for image displays)
